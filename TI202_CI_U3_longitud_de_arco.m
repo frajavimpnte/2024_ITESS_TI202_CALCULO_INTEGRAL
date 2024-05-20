@@ -8,12 +8,14 @@
 pkg load symbolic
 syms x y
 
-y  = x^(2/3)
+y  = sqrt((4*x^3)/9)
 dy = diff(y, x)
 longitud_de_arco = int( sqrt (1 + dy^2) )
-longitud_de_arco_val = double( int( sqrt (1 + dy^2), 1, 8 ) )
+longitud_de_arco_val = double( int( sqrt (1 + dy^2), 0, 3 ) )
 
-area = int( y )
-ara_val = double ( int(y, 1, 8) )
+
+
+%area = int( y )
+%area_val = double ( int(y, 1, 8) )
 
 

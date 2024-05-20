@@ -5,13 +5,13 @@
 %% Gráficas: volumen
 %% 13 mayo 2024
 
-x = 1:0.1:2;
-fx = x.^2;
+x = 0:0.01:pi/4;
+fx = sec(x);
 
 [x' fx']
 
 plot(x, fx)
 grid on
 xlabel('x')
-ylabel('fx =x.^(2/3)')
-axis([0,2,0,2])
+ylabel('fx = sec(x)')
+axis([-2,2,-2,2])
