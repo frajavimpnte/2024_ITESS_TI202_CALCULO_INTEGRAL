@@ -5,13 +5,13 @@
 %% Gráficas
 %% 13 mayo 2024
 
-x = -8:0.1:8;
-fx = x.^3;
+x = -3:0.1:3;
+fx = 4 - x.^2;
 
 [x' fx']
 
 plot(x, fx)
 grid on
 xlabel('x')
-ylabel('fx =x.^(2/3)')
+ylabel('fx = 4 - x.^2')
 %%axis([0,8,0,4])
